@@ -43,7 +43,7 @@ spec:
             memory: 512Mi
       - name: webhookrelayd
         image: "webhookrelay/webhookrelayd:latest"
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         command: ["/relayd"]
         env:
           - name: KEY
